@@ -51,12 +51,7 @@ codeunit 50703 "Session Event Logger"
             LockingSessionEvent.SetRange("Session ID", SessionId);
             LockingSessionEvent.DeleteAll();
 
-            // LockingSessionEvent.SetRange("Session ID", SessionId);
-            // if LockingSessionEvent.FindLast() then
-            //     NextEventId := LockingSessionEvent."Event ID" + 1
-            // else
             NextEventId := 1;
-
             repeat
                 LockingSessionEvent := TempLockingSessionEvent;
                 LockingSessionEvent."Event ID" := NextEventId;
@@ -83,7 +78,7 @@ codeunit 50703 "Session Event Logger"
         TempLockingSessionEvent."Event DateTime" := CurrentDateTime();
         TempLockingSessionEvent.Insert();
 
-        // FlushLogBuffer(SessionId);
+        // Logger runs in a separate session so that it doesn't interfere with the test executed in the current session
         StartSession(LoggingSessionId, Codeunit::"Background Session Logger", CompanyName, TempLockingSessionEvent);
     end;
 
