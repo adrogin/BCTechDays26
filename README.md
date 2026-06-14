@@ -2,6 +2,8 @@
 
 A Business Central extension demonstrating table locks acquired by various AL data access statements.
 
+<img width="1832" height="824" alt="AppScreenshot" src="https://github.com/user-attachments/assets/f0ffb531-bdc3-4c19-9f4c-7658b9c8fd70" />
+
 ### Build
 
 1. Build the `BcSqlClient` library
