@@ -1,0 +1,30 @@
+permissionset 50700 LockingDemo
+{
+    Assignable = true;
+    Permissions = tabledata "Locking Session Event"=RIMD,
+        tabledata "Locking Test"=RIMD,
+        tabledata "Session Parameters"=RIMD,
+        table "Locking Session Event"=X,
+        table "Locking Test"=X,
+        table "Session Parameters"=X,
+        codeunit "Locking Action"=X,
+        codeunit "Locking Scenarios"=X,
+        codeunit "Locking Session Controller"=X,
+        page "Locking Session Events"=X,
+        page "Locking Test"=X,
+        tabledata "Active Test Session"=RIMD,
+        tabledata "Lock Stats"=RIMD,
+        tabledata "Marker Table 1"=RIMD,
+        tabledata "Marker Table 2"=RIMD,
+        table "Active Test Session"=X,
+        table "Lock Stats"=X,
+        table "Marker Table 1"=X,
+        table "Marker Table 2"=X,
+        codeunit "Background Session Logger"=X,
+        codeunit "Lock Stats"=X,
+        codeunit "Locking Session Wrapper 1"=X,
+        codeunit "Locking Session Wrapper 2"=X,
+        codeunit "Session Event Logger"=X,
+        page "Lock Stats"=X,
+        page "Session Parameters"=X;
+}

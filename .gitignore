@@ -1,0 +1,9 @@
+*.app
+*.flf
+.alpackages/
+.alcache/
+.altemplates/
+.vscode/
+.netpackages/
+**/bin/
+**/obj/
